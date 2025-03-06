@@ -82,11 +82,6 @@ sudo docker ps
 - เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>`
 
 ### **6. สร้าง Docker image ใหม่ที่แสดงไฟล์ HTML**
-```bash
-mkdir mynginx
-cd mynginx
-nano index.html
-```
 - สร้าง `Dockerfile`:
 ```Dockerfile
 FROM nginx
