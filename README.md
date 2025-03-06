@@ -115,9 +115,6 @@ sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/u
 
 ### **9. รัน `docker-compose.yml` ที่ได้รับจากผู้คุมสอบ**
 - เปิดไฟล์ `.html`
-```bash
-docker-compose up -d
-```
 - เขียน `docker-compose.yml`:
 ```yaml
 version: '3'
@@ -129,6 +126,10 @@ services:
     volumes:
       - /home/user/new_index.html:/usr/share/nginx/html/index.html
 ```
+```bash
+docker-compose up -d
+```
+
 - เปิดเบราว์เซอร์และดูผลลัพธ์
 
 ### **10. สร้าง HTML ใหม่และรันด้วย `docker-compose.yml`**
