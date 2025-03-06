@@ -136,14 +136,18 @@ docker-compose up -d
 - สร้างไฟล์ `.html`
 - เขียน `docker-compose.yml`:
 ```yaml
-version: '3'
+version: '3.8'
 services:
   web:
     image: nginx
     ports:
       - "8084:80"
     volumes:
-      - /home/user/new_index.html:/usr/share/nginx/html/index.html
+      - ./html:/usr/share/nginx/html
+```
+```Dockerfile
+FROM nginx:latest
+COPY ./html /usr/share/nginx/html
 ```
 - รัน:
 ```bash
