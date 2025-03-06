@@ -140,10 +140,7 @@ COPY ./html /usr/share/nginx/html
 ```bash
 docker-compose up -d
 ```
-***กรณีเปิด localhost***
-- เปิด localhost และดูผลลัพธ์
-  
-***กรณีเปิด VM***
+- เริ่ม build
 ```bash
 docker build -t thipppharake/exam3:v1 .
 ```
