@@ -1,27 +1,5 @@
 # Dev-Ops-Final-lab-exam
 
-## **โจทย์**
-
-1. Create a virtual machine
-2. Install Nginx (not using Docker) to the virtual machine and show the default home page.
-3. Edit the HTML to show the new index.html in the Nginx
-4. Install Docker in the virtual machine, and call the "hello-world" image to run
-5. Run the Docker image Nginx and show the default page
-6. The proctor will send you the HTML file, create a new image to show the HTML file you
-received, and then run the container to show the output image in the VM
-7. Push the image you have created to your Docker Hub
-8. With your Docker image, map the volume of your container to show the website you
-have done on question no. 3
-9. The proctor will provide `docker-compose.yml` file, run the given docker-compose.yml and
-show the output in the browser
-10. Create a new HTML file in the VM, Write your `docker-compose.yml` to run your image,
-and map the volume to your new HTML file, and show the output.
-
-
----
-
-## **วิธีทำโดยละเอียด**
-
 ### **1. สร้างเครื่องเสมือน (Virtual Machine)**
 - สร้าง instance บน AWS
 - สร้างหรือเปิดใช้งาน Security groups
