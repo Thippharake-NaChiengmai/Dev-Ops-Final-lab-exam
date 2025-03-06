@@ -69,6 +69,9 @@ sudo docker run hello-world
 ```
 ### **5. รัน Docker image ของ Nginx และแสดงหน้าเว็บ**
 ```bash
+sudo docker pull nginx
+```
+```bash
 docker run --name mynginx -d -p 80:80 nginx
 ```
 - เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>`
