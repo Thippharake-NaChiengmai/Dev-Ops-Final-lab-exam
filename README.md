@@ -96,10 +96,17 @@ docker run --name customnginx -d -p 8081:80 mycustomnginx
 - เข้าไปที่ `http://<IP-ADDRESS>:8081`
 
 ### **7. อัปโหลด Image ไปยัง Docker Hub**
-```bash
-docker push <DOCKER_USERNAME>/mycustomnginx
-```
 
+```bash
+docker push thipppharake/testdocker:v0.5
+```
+- ไปเปิด window terminal
+```bash
+sudo docker pull thipppharake/testdocker:v0.5
+```
+```bash
+sudo docker run -d -p 8081:80 thipppharake/testdocker:v0.5
+```
 ### **8. ใช้ Volume เพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
 docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
