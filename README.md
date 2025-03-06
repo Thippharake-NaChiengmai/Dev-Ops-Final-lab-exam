@@ -89,8 +89,9 @@ FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 ```
 - ใช้คำสั่ง scp เพื่อคัดลอกไฟล์ไปยัง VM
-
-  
+```bash
+scp -i "C:\Users\HP\OneDrive\Desktop\new_key.pem" "D:\MyCode\Dev-Ops\test devOps 1\index.html" ubuntu@ec2-35-174-114-20.compute-1.amazonaws.com:/home/ubuntu/
+```
 - สร้างและรัน Docker image:
 ```bash
 docker build -t mycustomnginx .
