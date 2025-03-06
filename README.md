@@ -72,7 +72,7 @@ sudo docker run hello-world
 sudo docker pull nginx
 ```
 ```bash
-docker run --name mynginx -d -p 8080:80 nginx
+sudo docker run --name mynginx -d -p 8080:80 nginx
 ```
 - เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>`
 
