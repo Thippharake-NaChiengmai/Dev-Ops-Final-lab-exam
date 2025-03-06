@@ -1,5 +1,4 @@
 # Dev-Ops-Final-lab-exam
-# README - การติดตั้งและใช้งาน Nginx และ Docker
 
 ## **โจทย์**
 
