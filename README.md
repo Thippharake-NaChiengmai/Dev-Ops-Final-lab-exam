@@ -41,6 +41,10 @@ cd /var/www/html
 echo "<h1>Hello, Nginx! This is Thippharake page.</h1>" | sudo tee index.html
 sudo systemctl restart nginx
 ```
+- เสร็จแล้ว cd ไปหน้า Home
+  ```bash
+cd
+```
 ### **4. ติดตั้ง Docker และรัน "hello-world"**
 ```bash
 # Add Docker's official GPG key:
