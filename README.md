@@ -88,16 +88,11 @@ sudo docker ps
 FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 ```
-- ใช้คำสั่ง scp เพื่อคัดลอกไฟล์ไปยัง VM
-```bash
-scp -i "C:\Users\HP\OneDrive\Desktop\new_key.pem" "D:\MyCode\Dev-Ops\test devOps 1\index.html" ubuntu@ec2-35-174-114-20.compute-1.amazonaws.com:/home/ubuntu/
-```
 - สร้างและรัน Docker image:
 ```bash
 docker build -t mycustomnginx .
 docker run --name customnginx -d -p 8081:80 mycustomnginx
 ```
-- เข้าไปที่ `http://<IP-ADDRESS>:8081`
 
 ### **7. อัปโหลด Image ไปยัง Docker Hub**
 
@@ -111,6 +106,7 @@ sudo docker pull thipppharake/testdocker:v0.5
 ```bash
 sudo docker run -d -p 8081:80 thipppharake/testdocker:v0.5
 ```
+- เข้าไปที่ VM `http://<IP-ADDRESS>:8081`
 ### **8. ใช้ Volume เพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
 sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
