@@ -122,7 +122,8 @@ docker-compose up -d
 - เปิดเบราว์เซอร์และดูผลลัพธ์
 
 ### **10. สร้าง HTML ใหม่และรันด้วย `docker-compose.yml`**
-- สร้างไฟล์ `.html`
+- สร้าง floder `./html`
+- สร้างไฟล์ `.html` ข้างใน floder `./html`
 - เขียน `docker-compose.yml`:
 ```yaml
 version: '3.8'
