@@ -88,6 +88,9 @@ sudo docker ps
 FROM nginx
 COPY index.html /usr/share/nginx/html/index.html
 ```
+- ใช้คำสั่ง scp เพื่อคัดลอกไฟล์ไปยัง VM
+
+  
 - สร้างและรัน Docker image:
 ```bash
 docker build -t mycustomnginx .
