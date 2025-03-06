@@ -37,10 +37,10 @@ sudo systemctl status nginx
 
 ### **3. แก้ไขไฟล์ HTML เพื่อเปลี่ยนหน้าเว็บ**
 ```bash
-sudo nano /var/www/html/index.html
+cd /var/www/html
+echo "<h1>Hello, Nginx! This is Thippharake page.</h1>" | sudo tee index.html
+sudo systemctl restart nginx
 ```
-- แก้ไขเนื้อหา HTML แล้วบันทึก
-
 ### **4. ติดตั้ง Docker และรัน "hello-world"**
 ```bash
 # Add Docker's official GPG key:
