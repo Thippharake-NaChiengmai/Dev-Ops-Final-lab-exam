@@ -32,9 +32,6 @@ and map the volume to your new HTML file, and show the output.
 sudo apt update
 sudo apt install nginx -y
 sudo systemctl status nginx
-curl -4 icanhazip.com
-sudo chown -R ubuntu:ubuntu /var/www/html
-sudo chmod -R 775 /var/www/html
 ```
 - เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>` เพื่อดูหน้าเว็บของ Nginx
 
