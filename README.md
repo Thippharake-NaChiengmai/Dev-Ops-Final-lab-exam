@@ -119,7 +119,7 @@ sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/u
 docker-compose up -d
 ```
 
-- เปิดเบราว์เซอร์และดูผลลัพธ์
+- เปิด localhost และดูผลลัพธ์
 
 ### **10. สร้าง HTML ใหม่และรันด้วย `docker-compose.yml`**
 - สร้าง floder `./html`
