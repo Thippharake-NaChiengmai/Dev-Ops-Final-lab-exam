@@ -109,7 +109,7 @@ sudo docker run -d -p 8081:80 thipppharake/testdocker:v0.5
 ```
 ### **8. ใช้ Volume เพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
-docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
+sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
 ```
 - เข้าไปที่ `http://<IP-ADDRESS>:8082`
 
