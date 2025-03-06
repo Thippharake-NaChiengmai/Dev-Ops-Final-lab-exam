@@ -98,7 +98,6 @@ docker-compose up -d
 
 ***กรณีเปิด localhost***
 - เปิด localhost และดูผลลัพธ์
-
 ***กรณีเปิด VM***
 ```bash
 docker build -t thipppharake/exam1:v1 .
@@ -142,7 +141,6 @@ docker-compose up -d
 ```
 ***กรณีเปิด localhost***
 - เปิด localhost และดูผลลัพธ์
-- 
 ***กรณีเปิด VM***
 ```bash
 docker build -t thipppharake/exam3:v1 .
