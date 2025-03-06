@@ -97,8 +97,6 @@ docker run --name customnginx -d -p 8081:80 mycustomnginx
 
 ### **7. อัปโหลด Image ไปยัง Docker Hub**
 ```bash
-docker login
-docker tag mycustomnginx <DOCKER_USERNAME>/mycustomnginx
 docker push <DOCKER_USERNAME>/mycustomnginx
 ```
 
