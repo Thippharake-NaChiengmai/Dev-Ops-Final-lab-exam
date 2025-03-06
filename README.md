@@ -79,7 +79,7 @@ sudo docker run --name mynginx -d -p 8080:80 nginx
 ```bash
 sudo docker ps
 ```
-- เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>`
+- เปิดVM `http://<IP-ADDRESS>:8080`
 
 ### **6. สร้าง Docker image ใหม่ที่แสดงไฟล์ HTML**
 - เปิดไฟล์ `.html`
@@ -90,28 +90,27 @@ COPY index.html /usr/share/nginx/html/index.html
 ```
 - สร้างและรัน Docker image:
 ```bash
-docker build -t mycustomnginx .
-docker run --name customnginx -d -p 8081:80 mycustomnginx
+docker build -t thipppharake/exam1:v1 .
 ```
 
 ### **7. อัปโหลด Image ไปยัง Docker Hub**
 
 ```bash
-docker push thipppharake/testdocker:v0.5
+docker push thipppharake/exam1:v1
 ```
 - ไปเปิด window terminal
 ```bash
-sudo docker pull thipppharake/testdocker:v0.5
+sudo docker pull thipppharake/exam1:v1
 ```
 ```bash
-sudo docker run -d -p 8081:80 thipppharake/testdocker:v0.5
+sudo docker run -d -p 8081:80 thipppharake/exam1:v1
 ```
-- เข้าไปที่ VM `http://<IP-ADDRESS>:8081`
+- เปิด VM `http://<IP-ADDRESS>:8081`
 ### **8. ใช้ Volume เพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
 sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
 ```
-- เข้าไปที่ `http://<IP-ADDRESS>:8082`
+- เปิด VM `http://<IP-ADDRESS>:8082`
 
 ### **9. รัน `docker-compose.yml` ที่ได้รับจากผู้คุมสอบ**
 - รับไฟล์ `docker-compose.yml`
@@ -119,8 +118,27 @@ sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/u
 docker-compose up -d
 ```
 
+***กรณีเปิด localhost***
 - เปิด localhost และดูผลลัพธ์
-
+  ***กรณีเปิด VM***
+  ```bash
+docker build -t thipppharake/exam1:v1 .
+```
+```bash
+docker push thipppharake/exam2:v1
+```
+```bash
+docker push thipppharake/exam2:v1
+```
+- ไปเปิด window terminal
+```bash
+sudo docker pull thipppharake/exam2:v1
+```
+```bash
+sudo docker run -d -p 8083:80 thipppharake/exam2:v1
+```
+- เปิด VM `http://<IP-ADDRESS>:8083`
+  
 ### **10. สร้าง HTML ใหม่และรันด้วย `docker-compose.yml`**
 - สร้าง floder `./html`
 - สร้างไฟล์ `.html` ข้างใน floder `./html`
@@ -143,6 +161,23 @@ COPY ./html /usr/share/nginx/html
 ```bash
 docker-compose up -d
 ```
-- เข้าไปที่ `http://<IP-ADDRESS>:8084` เพื่อดูผลลัพธ์
-
----
+***กรณีเปิด localhost***
+- เปิด localhost และดูผลลัพธ์
+  ***กรณีเปิด VM***
+  ```bash
+docker build -t thipppharake/exam3:v1 .
+```
+```bash
+docker push thipppharake/exam3:v1
+```
+```bash
+docker push thipppharake/exam3:v1
+```
+- ไปเปิด window terminal
+```bash
+sudo docker pull thipppharake/exam3:v1
+```
+```bash
+sudo docker run -d -p 8084:80 thipppharake/exam3:v1
+```
+- เปิด VM `http://<IP-ADDRESS>:8084`
