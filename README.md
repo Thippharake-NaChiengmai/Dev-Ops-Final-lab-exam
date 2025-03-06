@@ -114,18 +114,7 @@ sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/u
 - เข้าไปที่ `http://<IP-ADDRESS>:8082`
 
 ### **9. รัน `docker-compose.yml` ที่ได้รับจากผู้คุมสอบ**
-- เปิดไฟล์ `.html`
-- เขียน `docker-compose.yml`:
-```yaml
-version: '3'
-services:
-  web:
-    image: nginx
-    ports:
-      - "8083:80"
-    volumes:
-      - /home/user/new_index.html:/usr/share/nginx/html/index.html
-```
+- รับไฟล์ `docker-compose.yml`
 ```bash
 docker-compose up -d
 ```
