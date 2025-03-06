@@ -83,7 +83,7 @@ docker tag mycustomnginx <DOCKER_USERNAME>/mycustomnginx
 docker push <DOCKER_USERNAME>/mycustomnginx
 ```
 
-### **8. ใช้โวลุ่มเพื่อแสดงหน้าเว็บจากข้อ 3**
+### **8. ใช้Volumeเพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
 docker run --name nginx-volume -d -p 8081:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
 ```
