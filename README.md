@@ -68,11 +68,16 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 ```
 ### **5. รัน Docker image ของ Nginx และแสดงหน้าเว็บ**
+
 ```bash
 sudo docker pull nginx
 ```
 ```bash
 sudo docker run --name mynginx -d -p 8080:80 nginx
+```
+- ตรวจสอบ Docker
+```bash
+sudo docker ps
 ```
 - เปิดเบราว์เซอร์ไปที่ `http://<IP-ADDRESS>`
 
