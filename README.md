@@ -23,11 +23,9 @@ and map the volume to your new HTML file, and show the output.
 ## **วิธีทำโดยละเอียด**
 
 ### **1. สร้างเครื่องเสมือน (Virtual Machine)**
-- ใช้ VirtualBox, VMware หรือสร้างบนคลาวด์ เช่น AWS, Google Cloud, หรือ Azure
-- หากใช้ **VirtualBox**:
-  1. ดาวน์โหลดและติดตั้ง [VirtualBox](https://www.virtualbox.org/)
-  2. ดาวน์โหลด Ubuntu Server
-  3. สร้างเครื่องเสมือนและติดตั้ง OS ตามปกติ
+- สร้าง instance บน AWS
+- สร้างหรือเปิดใช้งาน Security groups
+- สร้างหรือเปิดใช้งาน yourKey.pem
 
 ### **2. ติดตั้ง Nginx และแสดงหน้าโฮมเพจเริ่มต้น**
 ```bash
