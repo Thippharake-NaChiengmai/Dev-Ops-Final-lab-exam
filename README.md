@@ -65,7 +65,6 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 ```bash
-ssudo service docker start
 sudo docker run hello-world
 ```
 ### **5. รัน Docker image ของ Nginx และแสดงหน้าเว็บ**
