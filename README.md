@@ -51,13 +51,13 @@ sudo docker run hello-world
 sudo docker pull nginx
 ```
 ```bash
-sudo docker run --name mynginx -d -p 8080:80 nginx
+sudo docker run --name mynginx -d -p 8085:80 nginx
 ```
 - ตรวจสอบ Docker
 ```bash
 sudo docker ps
 ```
-- เปิดVM `http://<IP-ADDRESS>:8080`
+- เปิดVM `http://<IP-ADDRESS>:8085`
 
 ### **6. สร้าง Docker image ใหม่ที่แสดงไฟล์ HTML**
 - เปิดไฟล์ `.html`
