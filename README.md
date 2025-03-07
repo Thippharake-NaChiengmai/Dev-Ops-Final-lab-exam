@@ -95,11 +95,7 @@ sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/u
 ```bash
 docker-compose up -d
 ```
-
-***กรณีเปิด localhost***
-- เปิด localhost และดูผลลัพธ์
-
-***กรณีเปิด VM***
+***เปิด VM***
 ```bash
 docker build -t thipppharake/exam1:v1 .
 ```
