@@ -81,9 +81,9 @@ docker push thipppharake/exam1:v1
 sudo docker pull thipppharake/exam1:v1
 ```
 ```bash
-sudo docker run -d -p 8080:80 thipppharake/exam1:v1
+sudo docker run -d -p 8081:80 thipppharake/exam1:v1
 ```
-- เปิด VM `http://<IP-ADDRESS>:8080`
+- เปิด VM `http://<IP-ADDRESS>:8081`
 ### **8. ใช้ Volume เพื่อแสดงหน้าเว็บจากข้อ 3**
 ```bash
 sudo docker run --name nginx-volume -d -p 8082:80 -v /var/www/html/index.html:/usr/share/nginx/html/index.html nginx
