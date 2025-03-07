@@ -97,7 +97,7 @@ docker-compose up -d
 ```
 ***เปิด VM***
 ```bash
-docker build -t thipppharake/exam1:v1 .
+docker build -t thipppharake/exam2:kv1 .
 ```
 ```bash
 docker push thipppharake/exam2:v1
