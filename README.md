@@ -110,9 +110,9 @@ docker push thipppharake/exam2:v1
 sudo docker pull thipppharake/exam2:v1
 ```
 ```bash
-sudo docker run -d -p 8083:80 thipppharake/exam2:v1
+sudo docker run -d -p 8080:80 thipppharake/exam2:v1
 ```
-- เปิด VM `http://<IP-ADDRESS>:8083`
+- เปิด VM `http://<IP-ADDRESS>:8080`
   
 ### **10. สร้าง HTML ใหม่และรันด้วย `docker-compose.yml`**
 - สร้าง floder `./html`
